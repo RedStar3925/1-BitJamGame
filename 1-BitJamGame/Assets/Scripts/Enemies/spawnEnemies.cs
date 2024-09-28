@@ -9,21 +9,51 @@ public class spawnEnemies : MonoBehaviour
     [SerializeField] Transform[] transformsSpawn; 
 
     public float cdSpawnEnemy;
-    public void SpawnEnemyOnLand() // call this will spawn a ennemy then it will launch a timer before recall this methode 
-    {
-        System.Random random = new System.Random();
-        int a = random.Next(0, transformsSpawn.Length); // chose where the enemy will spawn
-        GameObject enemy = Instantiate(enemyBase, transformsSpawn[a]);
-        
-        // add a random range for the enemy spawn 
-        float TransY = Random.Range(-0.5f, 0.5f);
-        Debug.Log(TransY);
-        Vector2 startingPosition = enemy.GetComponent<Transform>().position;
-        startingPosition.y = transformsSpawn[a].position.y + TransY;
+    [SerializeField] List<EnemyScriptableObject> allTypeOfEnemies;
+    public enum EnemyBehavior { moveOnLand, stayOnLand, moveOnWater} 
 
-        enemy.GetComponent<Transform>().position = startingPosition;
+    public static spawnEnemies instance;
+    private void Awake()
+    {
+        if (instance != null)
+        { Debug.LogWarning("careful more than one instance of SpawnEnemies"); return; }
+        instance = this;
+    }
+
+    public void SpawnEnemy(EnemyScriptableObject enemyScripObj) // call this will spawn a ennemy then it will launch a timer before recall this methode 
+    {
+        GameObject enemy = Instantiate(enemyBase, transformsSpawn[0]);
+        BasicEnemieScript basicEnemieScript = enemy.GetComponent<BasicEnemieScript>();
+        basicEnemieScript.enemyType = enemyScripObj;
         
-        
+        switch (enemyScripObj.enemyBehavior)
+        {
+            case EnemyBehavior.stayOnLand:
+
+                System.Random random = new System.Random();
+                int a = random.Next(0, transformsSpawn.Length); // chose where the enemy will spawn
+                enemy.transform.SetParent(transformsSpawn[a]);
+
+                
+                // add a random range for the enemy spawn 
+                float transY = Random.Range(-0.5f, 0.5f);
+               // Debug.Log(transY);
+                Vector2 startingPosition = enemy.GetComponent<Transform>().position;
+                startingPosition.y = transformsSpawn[a].position.y + transY;
+
+                enemy.GetComponent<Transform>().position = startingPosition;
+                break;
+
+            case EnemyBehavior.moveOnLand:
+
+                break;
+
+            case EnemyBehavior.moveOnWater:
+
+                break;
+
+        }
+        basicEnemieScript.Init();
         StartCoroutine(StartCooldownSpawn());
     }
 
@@ -36,12 +66,12 @@ public class spawnEnemies : MonoBehaviour
             yield return null;
             cdRemaning -= Time.deltaTime;
         }
-        SpawnEnemyOnLand();
+        SpawnEnemy(allTypeOfEnemies[0]);
 
     }
     void Start()
     {
-        SpawnEnemyOnLand();
+        SpawnEnemy(allTypeOfEnemies[0]);
     }
 
 }

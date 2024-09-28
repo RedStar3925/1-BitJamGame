@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Enemies\BasicEnemieScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryPlacer.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\bulletScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\ScriptableEnemy\EnemyScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player\Movement\BasicPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\spawnEnemies.cs" />
   </ItemGroup>
