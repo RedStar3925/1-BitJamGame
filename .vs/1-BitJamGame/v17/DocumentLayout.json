@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\weapons\\turrets\\sentryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\turrets\\sentryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\enemies\\basicenemiescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\basicenemiescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\weapons\\turrets\\sentryplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\turrets\\sentryplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\player\\movement\\basicplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\movement\\basicplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bulletScript.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:54:56.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SentryAttack.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:51:28.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BasicEnemieScript.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:11:28.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SentryPlacer.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:54:23.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasicPlayerMovement.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:28:37.248Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
