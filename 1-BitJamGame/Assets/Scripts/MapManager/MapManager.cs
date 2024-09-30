@@ -11,7 +11,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject[] _topSideMapObj;
     [SerializeField] private GameObject[] _botSideMapObj;
     [Header("option")]
-    [SerializeField] private bool _isScreenSizeReference; // use this variable for replace parent 2 position (parent 1 will be always 0)
+    [SerializeField] private bool _isScreenSizeReference; 
     [SerializeField] private float _parentOneXPositionStart;
     [SerializeField] private float _parentTwoXPositionStart;
     [SerializeField] private float _xPositionToReset;
@@ -22,9 +22,10 @@ public class MapManager : MonoBehaviour
     private Vector3 _positionPlusSpeed;
     private Vector3 _topSidePosition;
     private Vector3 _botSidePosition;
+    private Transform _nextParent;
 
     public float GetScrollingSpeed() => _scrollingSpeed;
-    public Transform GetNextParent() => _parentObj[1].transform;
+    public Transform GetNextParent() => _nextParent;
 
 
     private void Awake() 
@@ -62,6 +63,7 @@ public class MapManager : MonoBehaviour
                 trm.position = new Vector3(_parentTwoXPositionStart,0,0);
                 GameObject topsideprefab = Instantiate(_topSideMapObj[0], trm.position + _topSidePosition, Quaternion.identity, trm);
                 GameObject botsideprefab = Instantiate(_botSideMapObj[0], trm.position + _botSidePosition, Quaternion.identity, trm);
+                _nextParent = trm;
             } 
     }
     private void ScrollMap(Transform trm)
