@@ -5,3 +5,9 @@
 [Bb]uild/
 Assets/AssetStoreTools*
 *.log
+1-BitJamGame/Logs/AssetImportWorker0.log
+1-BitJamGame/Logs/AssetImportWorker0.log
+1-BitJamGame/Logs/AssetImportWorker1-prev.log
+1-BitJamGame/Logs/AssetImportWorker1.log
+1-BitJamGame/Logs/shadercompiler-AssetImportWorker0.log
+1-BitJamGame/Logs/shadercompiler-UnityShaderCompiler.exe0.log
