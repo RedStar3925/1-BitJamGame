@@ -10,8 +10,9 @@ public class spawnEnemies : MonoBehaviour
 
     public float cdSpawnEnemy;
     [SerializeField] List<EnemyScriptableObject> allTypeOfEnemies;
-    public enum EnemyBehavior { moveOnLand, stayOnLand, moveOnWater} 
+    public enum EnemyBehavior { moveOnLand, stayOnLand, moveOnWater}
 
+    public GameObject player;
     public static spawnEnemies instance;
     private void Awake()
     {
@@ -66,9 +67,20 @@ public class spawnEnemies : MonoBehaviour
             yield return null;
             cdRemaning -= Time.deltaTime;
         }
-        SpawnEnemy(allTypeOfEnemies[0]);
+        SpawnEnemy(ChooseRdmScriptabl());
 
     }
+
+
+    private EnemyScriptableObject ChooseRdmScriptabl()
+    {
+        System.Random random = new System.Random();
+        int a = random.Next(0, allTypeOfEnemies.Count );
+
+        return allTypeOfEnemies[a];
+
+    }
+
     void Start()
     {
         SpawnEnemy(allTypeOfEnemies[0]);

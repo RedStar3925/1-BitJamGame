@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class bulletScript : MonoBehaviour
 {
+    public LogicScript CoinManager;
     public float lifetime = 3f;
+    Rigidbody2D rb;
+    
+    
     void Start()
     {
-        Destroy(gameObject, lifetime);
+        CoinManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
+            //  Destroy(gameObject, lifetime);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        Debug.Log("Bullet Collision");
+        if (collision.gameObject.tag == "Ennemy")
+        {
+          
+            CoinManager.AddCoin();
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
+  
+    
 }
