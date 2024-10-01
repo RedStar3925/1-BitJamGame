@@ -17,3 +17,10 @@ Assets/AssetStoreTools*
 1-BitJamGame/Logs/AssetImportWorker1.log
 1-BitJamGame/Logs/shadercompiler-AssetImportWorker0.log
 1-BitJamGame/UserSettings/Layouts/default-2022.dwlt
+1-BitJamGame/UserSettings/Layouts/default-2022.dwlt
+*.log
+*.log
+*.log
+*.dwlt
+/1-BitJamGame/UserSettings
+/1-BitJamGame/UserSettings/Layouts
