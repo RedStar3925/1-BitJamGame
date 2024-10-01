@@ -1918,3 +1918,63 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: c131e42997d2ba985bcbf2f7cb4c2a93 -> 67afe158bfcdeda119f6b56004bac825
+========================================================================
+Received Import Request.
+  Time since last request: 9649.940426 seconds.
+  path: Assets/Audio/destroy.wav
+  artifactKey: Guid(6d5d7dd027895714197242e26ada2a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/destroy.wav using Guid(6d5d7dd027895714197242e26ada2a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'fa5d3d11335c1b49d1d9d4a96c456b12') in 2.175738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Audio/Hit_Hurt.wav
+  artifactKey: Guid(e65fa983aa3fa20439c140106aa3e1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Hit_Hurt.wav using Guid(e65fa983aa3fa20439c140106aa3e1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7b55b8945644ddc6d5c0119756d4dc3d') in 0.036153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005712 seconds.
+  path: Assets/Audio/Pickup_Coin2.wav
+  artifactKey: Guid(17abd7949095a3245a7807f90a066122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Pickup_Coin2.wav using Guid(17abd7949095a3245a7807f90a066122) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '84b181c53c1647263ce753e6e5c49296') in 0.040462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001371 seconds.
+  path: Assets/Audio/player_hurt.wav
+  artifactKey: Guid(3dc4f5d746e29ce4abacd7804fa340fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/player_hurt.wav using Guid(3dc4f5d746e29ce4abacd7804fa340fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a08af1aca0d2cba3cada4967a2e4ad39') in 0.113728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003968 seconds.
+  path: Assets/Audio/towerupgrade.wav
+  artifactKey: Guid(0efe4b3f579dd0043afc0b8623dd0316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/towerupgrade.wav using Guid(0efe4b3f579dd0043afc0b8623dd0316) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5b25d6fe5219e78e921b41d1307ef5dc') in 0.084908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.013964 seconds.
+  path: Assets/Audio/Laser_Shoot2.wav
+  artifactKey: Guid(401c201f5c177974ea46fdb3924653a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Laser_Shoot2.wav using Guid(401c201f5c177974ea46fdb3924653a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '60df63b38e00cee4245a69dde7c1be34') in 0.062614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
