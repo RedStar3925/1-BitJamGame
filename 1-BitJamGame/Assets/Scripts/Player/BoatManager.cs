@@ -22,8 +22,13 @@ public class BoatManager : MonoBehaviour
     public void RemoveSentry()
     {
         //playermoney += turetcost/2
-        Destroy(_currentSqrSelected.GetComponentInChildren<GameObject>());
+        foreach (Transform obj in _currentSqrSelected)
+        {
+            Destroy(obj.gameObject);
+        }
+        
         //play sound refound turret
+        
     }
     public void TestBuySentry()
     {
