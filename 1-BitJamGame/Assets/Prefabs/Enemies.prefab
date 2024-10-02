@@ -178,5 +178,4 @@ MonoBehaviour:
   enemyType: {fileID: 0}
   enemyRenderer: {fileID: 0}
   scrollingSpeed: 1
-  player: {fileID: 0}
   enemy: {fileID: 7000904041950408089}

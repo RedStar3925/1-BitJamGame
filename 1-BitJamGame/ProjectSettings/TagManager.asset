@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - BoatPart
   - SentryPoint
+  - Logic
+  - Bullet
   layers:
   - Default
   - TransparentFX
