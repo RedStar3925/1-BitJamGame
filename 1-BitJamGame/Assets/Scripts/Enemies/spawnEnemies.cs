@@ -68,7 +68,19 @@ public class spawnEnemies : MonoBehaviour
                 break;
 
             case EnemyBehavior.moveOnWater:
+                a = random.Next(0, transSpawnWater.Length); // chose where the enemy will spawn
+                enemy.transform.SetParent(transSpawnWater[a]);
+                //Debug.Log(transSpawnGround[a]);
 
+                // add a random range for the enemy spawn 
+                float transYwater = Random.Range(botGroundLimit.position.y + 0.5f, topGroundLimit.position.y - 0.5f); // chose a Y position on water for make the spawn 
+                //Debug.Log(transYwater);
+                enemy.transform.position = transSpawnWater[a].position;
+                // Debug.Log(transY);
+                Vector2 startingPositionWater = enemy.transform.position;
+                startingPositionWater.y = transSpawnWater[a].position.y + transYwater;
+
+                enemy.GetComponent<Transform>().position = startingPositionWater;
                 break;
 
         }
@@ -114,6 +126,9 @@ public class spawnEnemies : MonoBehaviour
 
         Vector2 RightBot = camera.ViewportToWorldPoint(new Vector2(1.2f, 0.1f));
         transSpawnStatic[1].position = RightBot;
+
+        Vector2 RightMidle = camera.ViewportToWorldPoint(new Vector2(1.2f, 0.5f));
+        transSpawnWater[0].position = RightMidle;
     }
 
     void Start()

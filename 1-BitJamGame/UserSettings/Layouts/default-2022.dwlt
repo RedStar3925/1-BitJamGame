@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 713
     width: 1078
     height: 234
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 40
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 86
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -123,8 +123,8 @@ MonoBehaviour:
     y: 0
     width: 522
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Enemies
+    - Assets/Scripts/Enemies/ScriptableEnemy
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -405,16 +405,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Enemies
+  - Assets/Scripts/Enemies/ScriptableEnemy
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\bordel\UNITY\jeu\test unityGitHub\1-BitJamGame\1-BitJamGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 15}
-    m_SelectedIDs: 7e620000
-    m_LastClickedID: 25214
-    m_ExpandedIDs: 000000007a6200007c6200007e6200008062000000ca9a3b
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 9c620000
+    m_LastClickedID: 25244
+    m_ExpandedIDs: 0000000046620000486200004a6200004c62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a6200007c6200007e62000080620000
+    m_ExpandedIDs: 0000000046620000486200004a6200004c620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -467,24 +467,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 86d0ffff
-    m_LastClickedInstanceID: -12154
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: ac610000
+    m_LastClickedInstanceID: 25004
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: player testing
-      m_OriginalName: player testing
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25292
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6f4ffff
-      m_LastClickedID: -2890
-      m_ExpandedIDs: c4f4ffffdaf6ffffd2f7ffffd8faffffa263000098640000aa640000
+      m_SelectedIDs: ac610000
+      m_LastClickedID: 25004
+      m_ExpandedIDs: 1afbffffac610000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.791675, y: 2.0182097, z: 0.020772068}
+    m_Target: {x: -0.95325947, y: -3.501665, z: -0.066425905}
     speed: 2
-    m_Value: {x: 1.791675, y: 2.0182097, z: 0.020772068}
+    m_Value: {x: -0.95325947, y: -3.501665, z: -0.066425905}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1029,9 +1029,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.9230227
+    m_Target: 16.64282
     speed: 2
-    m_Value: 7.9230227
+    m_Value: 16.64282
   m_Ortho:
     m_Target: 1
     speed: 2

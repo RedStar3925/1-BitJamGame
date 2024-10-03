@@ -53,13 +53,31 @@ public class BasicEnemieScript : MonoBehaviour
                 //Debug.Log("est hors zone");
                 if (Mathf.Abs( transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) < Mathf.Abs( transform.position.y - spawnEnemies.instance.botGroundLimit.position.y)) // check where enemy is close of a ground and place it
                 {
-                    Debug.Log("Top dis " + (transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) + " bot dis " + (transform.position.y - spawnEnemies.instance.botGroundLimit.position.y));
-                    Debug.Log("replacement Top");
+                    //Debug.Log("Top dis " + (transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) + " bot dis " + (transform.position.y - spawnEnemies.instance.botGroundLimit.position.y));
+                    //Debug.Log("replacement Top");
                     transform.position = new Vector2( transform.position.x ,spawnEnemies.instance.topGroundLimit.position.y) ;
                 }
                 else 
                 {
-                    Debug.Log("replacement Bot");
+                   // Debug.Log("replacement Bot");
+                    transform.position = new Vector2(transform.position.x, spawnEnemies.instance.botGroundLimit.position.y);
+                }
+            }
+        }
+        else if (enemyType.enemyBehavior == spawnEnemies.EnemyBehavior.moveOnWater)
+        {
+            if (transform.position.y > spawnEnemies.instance.topGroundLimit.position.y || transform.position.y < spawnEnemies.instance.botGroundLimit.position.y) // check if GroundEnemy is on Water 
+            {
+                //Debug.Log("est hors zone");
+                if (Mathf.Abs(transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) < Mathf.Abs(transform.position.y - spawnEnemies.instance.botGroundLimit.position.y)) // check where enemy is close of a water and place it
+                {
+                    //Debug.Log("Top dis " + (transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) + " bot dis " + (transform.position.y - spawnEnemies.instance.botGroundLimit.position.y));
+                    //Debug.Log("replacement Top");
+                    transform.position = new Vector2(transform.position.x, spawnEnemies.instance.topGroundLimit.position.y);
+                }
+                else
+                {
+                    //Debug.Log("replacement Bot");
                     transform.position = new Vector2(transform.position.x, spawnEnemies.instance.botGroundLimit.position.y);
                 }
             }

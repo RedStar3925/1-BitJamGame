@@ -568,11 +568,13 @@ MonoBehaviour:
   transSpawnGround:
   - {fileID: 1550668108}
   - {fileID: 1395828981}
-  transSpawnWater: []
+  transSpawnWater:
+  - {fileID: 1622340007}
   cdSpawnEnemy: 2
   allTypeOfEnemies:
   - {fileID: 11400000, guid: dde0da571ed3c744aafd583e42c9beae, type: 2}
   - {fileID: 11400000, guid: e908b06cfd4504c47a87a30badcbb221, type: 2}
+  - {fileID: 11400000, guid: de4772a8148ab3d45861ee19a6380f72, type: 2}
   player: {fileID: 1482643657}
   topGroundLimit: {fileID: 311619211}
   botGroundLimit: {fileID: 1342063366}
@@ -593,6 +595,7 @@ Transform:
   - {fileID: 1944032309}
   - {fileID: 1550668108}
   - {fileID: 1395828981}
+  - {fileID: 1622340007}
   - {fileID: 311619211}
   - {fileID: 1342063366}
   - {fileID: 1845460532}
@@ -860,6 +863,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 791b8737e6fc4b944b26a3f9f0ab0e9e, type: 3}
+--- !u!1 &1622340006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622340007}
+  m_Layer: 0
+  m_Name: EnemySpawnerWater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622340007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622340006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: -3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421496295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729548893
 GameObject:
   m_ObjectHideFlags: 0
