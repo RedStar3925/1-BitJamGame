@@ -44,6 +44,26 @@ public class BasicEnemieScript : MonoBehaviour
             
             transform.Translate(dirToPlayer.normalized * Time.deltaTime * enemyType.speed, Space.World);
         }
+
+        if (enemyType.enemyBehavior == spawnEnemies.EnemyBehavior.moveOnLand)
+        {
+            //Debug.Log("check");
+            if (transform.position.y < spawnEnemies.instance.topGroundLimit.position.y && transform.position.y > spawnEnemies.instance.botGroundLimit.position.y) // check if GroundEnemy is on ground 
+            {
+                //Debug.Log("est hors zone");
+                if (Mathf.Abs( transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) < Mathf.Abs( transform.position.y - spawnEnemies.instance.botGroundLimit.position.y)) // check where enemy is close of a ground and place it
+                {
+                    Debug.Log("Top dis " + (transform.position.y - spawnEnemies.instance.topGroundLimit.position.y) + " bot dis " + (transform.position.y - spawnEnemies.instance.botGroundLimit.position.y));
+                    Debug.Log("replacement Top");
+                    transform.position = new Vector2( transform.position.x ,spawnEnemies.instance.topGroundLimit.position.y) ;
+                }
+                else 
+                {
+                    Debug.Log("replacement Bot");
+                    transform.position = new Vector2(transform.position.x, spawnEnemies.instance.botGroundLimit.position.y);
+                }
+            }
+        }
     }
 
     private void CleanOffScreen() // destroy enemy when they go to far away of the camera

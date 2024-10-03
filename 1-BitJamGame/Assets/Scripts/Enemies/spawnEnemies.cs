@@ -14,6 +14,8 @@ public class spawnEnemies : MonoBehaviour
 
     public GameObject player;
     public static spawnEnemies instance;
+
+    public Transform topGroundLimit, botGroundLimit;
     private void Awake()
     {
         if (instance != null)
