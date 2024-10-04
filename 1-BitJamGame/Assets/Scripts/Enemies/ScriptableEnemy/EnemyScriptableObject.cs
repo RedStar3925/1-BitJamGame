@@ -11,6 +11,7 @@ public class EnemyScriptableObject : ScriptableObject
     public Sprite enemySprite;
     public float health;
 
-    public float speed;
+    public float speed , fireRange, fireRate, damage;
+    
     
 }

@@ -11,7 +11,9 @@ public class BasicEnemieScript : MonoBehaviour
     [SerializeField] float scrollingSpeed = 1f; // speed should be equal to the scrolling speed 
     Vector2 scrollingDirection = new Vector2(-1f, 0f); //  <-- 
 
-    [SerializeField] GameObject enemy;
+    private bool isAiming;
+
+    [SerializeField] GameObject enemy, enemyBulletPrefab;
     void Start()
     {
         
@@ -20,7 +22,13 @@ public class BasicEnemieScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveOnPlayer();
+        if (!isAiming)
+        {
+            MoveOnPlayer();
+        }
+       
+
+        ShootAtPlayer();
         transform.Translate(scrollingDirection.normalized * Time.deltaTime * scrollingSpeed, Space.World);
         CleanOffScreen();
     }
@@ -40,11 +48,12 @@ public class BasicEnemieScript : MonoBehaviour
     {
         if (enemyType.enemyBehavior == spawnEnemies.EnemyBehavior.moveOnLand || enemyType.enemyBehavior == spawnEnemies.EnemyBehavior.moveOnWater)
         {
-            Vector2 dirToPlayer = (spawnEnemies.instance.player.transform.position - enemy.transform.position).normalized;
+            Vector2 dirToPlayer = (spawnEnemies.instance.player.transform.position - transform.position).normalized;
             
             transform.Translate(dirToPlayer.normalized * Time.deltaTime * enemyType.speed, Space.World);
         }
 
+        //limit area
         if (enemyType.enemyBehavior == spawnEnemies.EnemyBehavior.moveOnLand)
         {
             //Debug.Log("check");
@@ -92,6 +101,31 @@ public class BasicEnemieScript : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void ShootAtPlayer()
+    {
+        float distance = Vector2.Distance(transform.position, spawnEnemies.instance.player.transform.position);
+        if (enemyType.fireRange > distance && !isAiming)
+        {
+            StartCoroutine(StartAimingTimer());
+        }
+    }
+
+    IEnumerator StartAimingTimer() 
+    {
+        isAiming = true;
+        float cdRemaning = 1/ enemyType.fireRate;
+        while (cdRemaning > 0)
+        {
+            yield return null;
+            cdRemaning -= Time.deltaTime;
+        }
+
+        Vector2 direction = ( spawnEnemies.instance.player.transform.position - transform.position ).normalized;
+        GameObject bullet = Instantiate(enemyBulletPrefab, transform);
+        bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
+        isAiming = false;
     }
 
     //public void EnemyTakeDamage(int dmg = 10)
