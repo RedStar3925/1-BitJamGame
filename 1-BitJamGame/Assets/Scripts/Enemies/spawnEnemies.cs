@@ -16,6 +16,7 @@ public class spawnEnemies : MonoBehaviour
     public static spawnEnemies instance;
 
     public Transform topGroundLimit, botGroundLimit;
+    [SerializeField] float totalChanceToSpawn;
     private void Awake()
     {
         if (instance != null)
@@ -103,12 +104,30 @@ public class spawnEnemies : MonoBehaviour
     }
 
 
-    private EnemyScriptableObject ChooseRdmScriptabl()
-    {
-        System.Random random = new System.Random();
-        int a = random.Next(0, allTypeOfEnemies.Count );
+    //private EnemyScriptableObject ChooseRdmScriptabl()
+    //{
+    //    System.Random random = new System.Random();
+    //    int a = random.Next(0, allTypeOfEnemies.Count );
 
-        return allTypeOfEnemies[a];
+    //    return allTypeOfEnemies[a];
+
+    //}
+
+    private EnemyScriptableObject ChooseRdmScriptabl() 
+    {
+        
+        float a = Random.Range(1, totalChanceToSpawn);
+        float totalCheck = 0;
+        for (int i = 0; i < allTypeOfEnemies.Count; i++)
+        {
+            if (allTypeOfEnemies[i].chanceToSpawn + totalCheck >= a)
+            {
+                Debug.Log(a + " " + allTypeOfEnemies[i]);
+                return allTypeOfEnemies[i];
+            }
+            totalCheck += allTypeOfEnemies[i].chanceToSpawn;
+        }
+        return null;
 
     }
 
@@ -131,8 +150,18 @@ public class spawnEnemies : MonoBehaviour
         transSpawnWater[0].position = RightMidle;
     }
 
+    private void MaxChanceTospawn()
+    {
+        foreach (EnemyScriptableObject item in allTypeOfEnemies)
+        {
+            totalChanceToSpawn += item.chanceToSpawn;
+        }
+    }
+
     void Start()
     {
+        MaxChanceTospawn();
+        
         SpawnEnemy(allTypeOfEnemies[0]);
         PlaceAllSpawn();
     }

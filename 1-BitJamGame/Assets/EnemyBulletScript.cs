@@ -21,12 +21,12 @@ public class EnemyBulletScript : MonoBehaviour
 
         if (renderer.isVisible == false)
         {
-            Debug.Log(transform.position + "  non visible ");
+           // Debug.Log(transform.position + "  non visible ");
             Destroy(this.gameObject);
         }
         else if (renderer.isVisible)
         {
-            Debug.Log("est visible");
+          //  Debug.Log("est visible");
         }
     }
 

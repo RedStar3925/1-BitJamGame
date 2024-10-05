@@ -20,3 +20,5 @@ MonoBehaviour:
   fireRange: 8
   fireRate: 1
   damage: 0
+  chanceToSpawn: 5
+  costPoint: 0

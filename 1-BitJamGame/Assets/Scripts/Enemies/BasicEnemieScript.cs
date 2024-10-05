@@ -12,11 +12,11 @@ public class BasicEnemieScript : MonoBehaviour
     Vector2 scrollingDirection = new Vector2(-1f, 0f); //  <-- 
 
     private bool isAiming;
-
+    private new Renderer renderer;
     [SerializeField] GameObject enemy, enemyBulletPrefab;
     void Start()
     {
-        
+        renderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -26,9 +26,13 @@ public class BasicEnemieScript : MonoBehaviour
         {
             MoveOnPlayer();
         }
-       
 
-        ShootAtPlayer();
+        if (renderer.isVisible)
+        {
+            ShootAtPlayer();
+        }
+        
+        
         transform.Translate(scrollingDirection.normalized * Time.deltaTime * scrollingSpeed, Space.World);
         CleanOffScreen();
     }
@@ -124,26 +128,27 @@ public class BasicEnemieScript : MonoBehaviour
 
         Vector2 direction = ( spawnEnemies.instance.player.transform.position - transform.position ).normalized;
         GameObject bullet = Instantiate(enemyBulletPrefab, transform);
+        bullet.GetComponent<EnemyBulletScript>().damage = enemyType.damage; // apply the enemy damage to the bullet 
         bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
         isAiming = false;
     }
 
-    //public void EnemyTakeDamage(int dmg = 10)
-    //{
-    //    life -= dmg;
-    //    if (life <= 0)
-    //    {
-    //        // add a coin 
-    //        Destroy(this.gameObject);
-    //    }
-    //}
+    public void EnemyTakeDamage(int dmg = 10)
+    {
+        life -= dmg;
+        if (life <= 0)
+        {
+            // add a coin 
+            Destroy(this.gameObject);
+        }
+    }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Bullet")
-    //    {
-    //        EnemyTakeDamage();
-    //        Destroy(collision.gameObject);
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            EnemyTakeDamage();
+            Destroy(collision.gameObject);
+        }
+    }
 }
