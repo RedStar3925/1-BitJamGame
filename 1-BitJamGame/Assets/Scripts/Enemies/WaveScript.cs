@@ -32,7 +32,7 @@ public class WaveScript : MonoBehaviour
             GameObject enemy = spawnEnemies.instance.SpawnEnemy(spawnEnemies.instance.ChooseRdmScriptabl());
             enemiesWave.Add(enemy);
             totalPoint += enemy.GetComponent<BasicEnemieScript>().enemyType.costPoint;
-            Debug.Log(totalPoint);
+            //Debug.Log(totalPoint);
 
             StartCoroutine(StartCdSpawnWave());
         }
