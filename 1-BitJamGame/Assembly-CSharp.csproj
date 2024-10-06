@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\BasicEnemieScript.cs" />
     <Compile Include="Assets\Scripts\Player\BoatManager.cs" />
+    <Compile Include="Assets\WaveScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryPlacer.cs" />
     <Compile Include="Assets\Scripts\UI\LogicScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\bulletScript.cs" />

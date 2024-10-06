@@ -12,11 +12,13 @@ public class spawnEnemies : MonoBehaviour
     [SerializeField] List<EnemyScriptableObject> allTypeOfEnemies;
     public enum EnemyBehavior { moveOnLand, stayOnLand, moveOnWater}
 
-    public GameObject player;
-    public static spawnEnemies instance;
+
 
     public Transform topGroundLimit, botGroundLimit;
     [SerializeField] float totalChanceToSpawn;
+
+    public GameObject player;
+    public static spawnEnemies instance;
     private void Awake()
     {
         if (instance != null)
@@ -26,67 +28,70 @@ public class spawnEnemies : MonoBehaviour
 
     public void SpawnEnemy(EnemyScriptableObject enemyScripObj) // call this will spawn a ennemy then it will launch a timer before recall this methode 
     {
-        GameObject enemy = Instantiate(enemyBase);
-        BasicEnemieScript basicEnemieScript = enemy.GetComponent<BasicEnemieScript>();
-        basicEnemieScript.enemyType = enemyScripObj;
-
-        System.Random random = new System.Random();
-        switch (enemyScripObj.enemyBehavior)
+        if (WaveScript.instance.waveIsOn)
         {
+            GameObject enemy = Instantiate(enemyBase);
+            BasicEnemieScript basicEnemieScript = enemy.GetComponent<BasicEnemieScript>();
+            basicEnemieScript.enemyType = enemyScripObj;
+
+            System.Random random = new System.Random();
+            switch (enemyScripObj.enemyBehavior)
+            {
 
 
-            case EnemyBehavior.stayOnLand:
+                case EnemyBehavior.stayOnLand:
 
-                int a = random.Next(0, transSpawnStatic.Length); // chose where the enemy will spawn
-                enemy.transform.SetParent(transSpawnStatic[a]);
+                    int a = random.Next(0, transSpawnStatic.Length); // chose where the enemy will spawn
+                    enemy.transform.SetParent(transSpawnStatic[a]);
 
-                
-                // add a random range for the enemy spawn 
-                float transY = Random.Range(-0.5f, 0.5f);
 
-                enemy.transform.position = transSpawnStatic[a].position;
-               // Debug.Log(transY);
-                Vector2 startingPosition = enemy.transform.position;
-                startingPosition.y = transSpawnStatic[a].position.y + transY;
+                    // add a random range for the enemy spawn 
+                    float transY = Random.Range(-0.5f, 0.5f);
 
-                enemy.GetComponent<Transform>().position = startingPosition;
-                break;
+                    enemy.transform.position = transSpawnStatic[a].position;
+                    // Debug.Log(transY);
+                    Vector2 startingPosition = enemy.transform.position;
+                    startingPosition.y = transSpawnStatic[a].position.y + transY;
 
-            case EnemyBehavior.moveOnLand:
-                a = random.Next(0, transSpawnGround.Length); // chose where the enemy will spawn
-                enemy.transform.SetParent(transSpawnGround[a]);
-                //Debug.Log(transSpawnGround[a]);
+                    enemy.GetComponent<Transform>().position = startingPosition;
+                    break;
 
-                // add a random range for the enemy spawn 
-                float transX = Random.Range(-5f, 5f);
+                case EnemyBehavior.moveOnLand:
+                    a = random.Next(0, transSpawnGround.Length); // chose where the enemy will spawn
+                    enemy.transform.SetParent(transSpawnGround[a]);
+                    //Debug.Log(transSpawnGround[a]);
 
-                enemy.transform.position = transSpawnGround[a].position;
-                // Debug.Log(transY);
-                Vector2 startingPositionGround = enemy.transform.position;
-                startingPositionGround.x = transSpawnGround[a].position.x + transX;
+                    // add a random range for the enemy spawn 
+                    float transX = Random.Range(-5f, 5f);
 
-                enemy.GetComponent<Transform>().position = startingPositionGround;
-                break;
+                    enemy.transform.position = transSpawnGround[a].position;
+                    // Debug.Log(transY);
+                    Vector2 startingPositionGround = enemy.transform.position;
+                    startingPositionGround.x = transSpawnGround[a].position.x + transX;
 
-            case EnemyBehavior.moveOnWater:
-                a = random.Next(0, transSpawnWater.Length); // chose where the enemy will spawn
-                enemy.transform.SetParent(transSpawnWater[a]);
-                //Debug.Log(transSpawnGround[a]);
+                    enemy.GetComponent<Transform>().position = startingPositionGround;
+                    break;
 
-                // add a random range for the enemy spawn 
-                float transYwater = Random.Range(botGroundLimit.position.y + 0.5f, topGroundLimit.position.y - 0.5f); // chose a Y position on water for make the spawn 
-                //Debug.Log(transYwater);
-                enemy.transform.position = transSpawnWater[a].position;
-                // Debug.Log(transY);
-                Vector2 startingPositionWater = enemy.transform.position;
-                startingPositionWater.y = transSpawnWater[a].position.y + transYwater;
+                case EnemyBehavior.moveOnWater:
+                    a = random.Next(0, transSpawnWater.Length); // chose where the enemy will spawn
+                    enemy.transform.SetParent(transSpawnWater[a]);
+                    //Debug.Log(transSpawnGround[a]);
 
-                enemy.GetComponent<Transform>().position = startingPositionWater;
-                break;
+                    // add a random range for the enemy spawn 
+                    float transYwater = Random.Range(botGroundLimit.position.y + 0.5f, topGroundLimit.position.y - 0.5f); // chose a Y position on water for make the spawn 
+                                                                                                                          //Debug.Log(transYwater);
+                    enemy.transform.position = transSpawnWater[a].position;
+                    // Debug.Log(transY);
+                    Vector2 startingPositionWater = enemy.transform.position;
+                    startingPositionWater.y = transSpawnWater[a].position.y + transYwater;
 
+                    enemy.GetComponent<Transform>().position = startingPositionWater;
+                    break;
+
+            }
+            basicEnemieScript.Init();
+            StartCoroutine(StartCooldownSpawn());
         }
-        basicEnemieScript.Init();
-        StartCoroutine(StartCooldownSpawn());
     }
 
 
@@ -103,7 +108,6 @@ public class spawnEnemies : MonoBehaviour
 
     }
 
-
     //private EnemyScriptableObject ChooseRdmScriptabl()
     //{
     //    System.Random random = new System.Random();
@@ -113,7 +117,7 @@ public class spawnEnemies : MonoBehaviour
 
     //}
 
-    private EnemyScriptableObject ChooseRdmScriptabl() 
+    public EnemyScriptableObject ChooseRdmScriptabl() 
     {
         
         float a = Random.Range(1, totalChanceToSpawn);
