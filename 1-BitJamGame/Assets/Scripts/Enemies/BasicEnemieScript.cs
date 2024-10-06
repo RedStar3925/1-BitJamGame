@@ -103,7 +103,7 @@ public class BasicEnemieScript : MonoBehaviour
         Vector2 topLeft = camera.ViewportToWorldPoint(new Vector2(0, 1));
         if (transform.position.x <= (topLeft.x *1.2f))
         {
-            Destroy(this.gameObject);
+            WaveScript.instance.RemoveEnemy(gameObject);
         }
     }
 
@@ -139,7 +139,7 @@ public class BasicEnemieScript : MonoBehaviour
         if (life <= 0)
         {
             // add a coin 
-            Destroy(this.gameObject);
+            WaveScript.instance.RemoveEnemy(gameObject);
         }
     }
 

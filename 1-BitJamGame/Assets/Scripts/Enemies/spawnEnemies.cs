@@ -26,7 +26,7 @@ public class spawnEnemies : MonoBehaviour
         instance = this;
     }
 
-    public void SpawnEnemy(EnemyScriptableObject enemyScripObj) // call this will spawn a ennemy then it will launch a timer before recall this methode 
+    public GameObject SpawnEnemy(EnemyScriptableObject enemyScripObj) // call this will spawn a ennemy then it will launch a timer before recall this methode 
     {
         if (WaveScript.instance.waveIsOn)
         {
@@ -89,8 +89,15 @@ public class spawnEnemies : MonoBehaviour
                     break;
 
             }
+
             basicEnemieScript.Init();
-            StartCoroutine(StartCooldownSpawn());
+            
+            //StartCoroutine(StartCooldownSpawn());
+            return enemy;
+        }
+        else
+        {
+            return null;
         }
     }
 
@@ -126,7 +133,7 @@ public class spawnEnemies : MonoBehaviour
         {
             if (allTypeOfEnemies[i].chanceToSpawn + totalCheck >= a)
             {
-                Debug.Log(a + " " + allTypeOfEnemies[i]);
+                //Debug.Log(a + " " + allTypeOfEnemies[i]);
                 return allTypeOfEnemies[i];
             }
             totalCheck += allTypeOfEnemies[i].chanceToSpawn;
@@ -166,7 +173,7 @@ public class spawnEnemies : MonoBehaviour
     {
         MaxChanceTospawn();
         
-        SpawnEnemy(allTypeOfEnemies[0]);
+        //SpawnEnemy(allTypeOfEnemies[0]);
         PlaceAllSpawn();
     }
 

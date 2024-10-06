@@ -21,4 +21,4 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   chanceToSpawn: 20
-  costPoint: 0
+  costPoint: 1

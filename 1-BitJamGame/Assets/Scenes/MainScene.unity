@@ -275,6 +275,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveIsOn: 0
+  enemiesWave: []
+  wavePower: 30
+  scalingWavePower: 10
 --- !u!4 &532348782
 Transform:
   m_ObjectHideFlags: 0
@@ -615,7 +618,7 @@ MonoBehaviour:
   - {fileID: 1395828981}
   transSpawnWater:
   - {fileID: 1622340007}
-  cdSpawnEnemy: 2
+  cdSpawnEnemy: 0.5
   allTypeOfEnemies:
   - {fileID: 11400000, guid: dde0da571ed3c744aafd583e42c9beae, type: 2}
   - {fileID: 11400000, guid: e908b06cfd4504c47a87a30badcbb221, type: 2}

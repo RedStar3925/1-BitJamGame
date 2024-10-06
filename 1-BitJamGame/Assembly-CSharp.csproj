@@ -63,15 +63,15 @@
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\BasicEnemieScript.cs" />
     <Compile Include="Assets\Scripts\Player\BoatManager.cs" />
-    <Compile Include="Assets\WaveScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryPlacer.cs" />
     <Compile Include="Assets\Scripts\UI\LogicScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\bulletScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\ScriptableEnemy\EnemyScriptableObject.cs" />
-    <Compile Include="Assets\EnemyBulletScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\WaveScript.cs" />
     <Compile Include="Assets\Scripts\Player\Movement\BasicPlayerMovement.cs" />
     <Compile Include="Assets\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Enemies\CleanOffScrean.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyBulletScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\spawnEnemies.cs" />
     <Compile Include="Assets\Scripts\MapManager\MapManager.cs" />
   </ItemGroup>
