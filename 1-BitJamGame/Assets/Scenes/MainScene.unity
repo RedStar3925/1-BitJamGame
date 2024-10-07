@@ -620,8 +620,13 @@ MonoBehaviour:
   - {fileID: 1622340007}
   cdSpawnEnemy: 0.5
   allTypeOfEnemies:
-  - {fileID: 11400000, guid: dde0da571ed3c744aafd583e42c9beae, type: 2}
+  - {fileID: 11400000, guid: ff14495f6a138f242bf02c25e56130a7, type: 2}
   - {fileID: 11400000, guid: e908b06cfd4504c47a87a30badcbb221, type: 2}
+  - {fileID: 11400000, guid: 76c6e35b6e81a2840a84a09a043b2cf4, type: 2}
+  - {fileID: 11400000, guid: dde0da571ed3c744aafd583e42c9beae, type: 2}
+  - {fileID: 11400000, guid: aeaac3532b3920340ba531bd0e7bf49f, type: 2}
+  - {fileID: 11400000, guid: d1606f477415c5e40a7e4078439b9f59, type: 2}
+  - {fileID: 11400000, guid: 384bf47861cb85d4b9f3531e8a72264b, type: 2}
   - {fileID: 11400000, guid: de4772a8148ab3d45861ee19a6380f72, type: 2}
   topGroundLimit: {fileID: 311619211}
   botGroundLimit: {fileID: 1342063366}

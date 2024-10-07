@@ -40,9 +40,11 @@ public class BasicEnemieScript : MonoBehaviour
     public void Init()
     {
         life = enemyType.health;
+        gameObject.name = enemyType.enemyName;
         if (enemyType.enemySprite != null)
         {
             enemyRenderer.sprite = enemyType.enemySprite;
+            
         }
 
     }

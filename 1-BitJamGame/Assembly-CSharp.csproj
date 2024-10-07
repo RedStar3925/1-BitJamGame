@@ -66,10 +66,10 @@
     <Compile Include="Assets\Scripts\Weapons\Turrets\SentryPlacer.cs" />
     <Compile Include="Assets\Scripts\UI\LogicScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\bulletScript.cs" />
-    <Compile Include="Assets\Scripts\Enemies\ScriptableEnemy\EnemyScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Enemies\WaveScript.cs" />
     <Compile Include="Assets\Scripts\Player\Movement\BasicPlayerMovement.cs" />
     <Compile Include="Assets\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Enemies\CleanOffScrean.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyBulletScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\spawnEnemies.cs" />
