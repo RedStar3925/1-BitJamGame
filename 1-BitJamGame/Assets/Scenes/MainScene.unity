@@ -628,6 +628,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1606f477415c5e40a7e4078439b9f59, type: 2}
   - {fileID: 11400000, guid: 384bf47861cb85d4b9f3531e8a72264b, type: 2}
   - {fileID: 11400000, guid: de4772a8148ab3d45861ee19a6380f72, type: 2}
+  - {fileID: 11400000, guid: 2f17486665e61d349b2762595a0b1c54, type: 2}
   topGroundLimit: {fileID: 311619211}
   botGroundLimit: {fileID: 1342063366}
   totalChanceToSpawn: 0

@@ -12,6 +12,6 @@ public class EnemyScriptableObject : ScriptableObject
     public float health;
 
     public float speed, fireRange, fireRate, damage, chanceToSpawn, costPoint;
-    
+    public bool selfDestruction = false;
     
 }

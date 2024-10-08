@@ -133,6 +133,11 @@ public class BasicEnemieScript : MonoBehaviour
         bullet.GetComponent<EnemyBulletScript>().damage = enemyType.damage; // apply the enemy damage to the bullet 
         bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
         isAiming = false;
+        if (enemyType.selfDestruction) // if the enemy is selfdestruct, we destroy it after shot
+        {
+            bullet.GetComponent<SpriteRenderer>().enabled = false;
+            WaveScript.instance.RemoveEnemy(gameObject);
+        }
     }
 
     public void EnemyTakeDamage(int dmg = 10)
