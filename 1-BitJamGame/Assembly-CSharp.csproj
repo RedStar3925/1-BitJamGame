@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyBulletScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\spawnEnemies.cs" />
     <Compile Include="Assets\Scripts\MapManager\MapManager.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
