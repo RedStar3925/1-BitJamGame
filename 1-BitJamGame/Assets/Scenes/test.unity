@@ -686,7 +686,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8944029585706767910}
         m_TargetAssemblyTypeName: BoatManager, Assembly-CSharp
-        m_MethodName: TestBuySentry
+        m_MethodName: BuySentry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2385,6 +2385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curentsentry: {fileID: 6973726435042963006, guid: e72bda913b8aca948989620f0b735667, type: 3}
+  _currentSqrSelected: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class BoatManager : MonoBehaviour
 {
     public GameObject curentsentry; //just for testing script
 
-    private Transform _currentSqrSelected;
+    public Transform _currentSqrSelected;
 
     public void SetCurrentSqrSelected(Transform trm) => _currentSqrSelected = trm;
     public Transform GetCurrentSqrSelected() => _currentSqrSelected;
@@ -35,11 +35,18 @@ public class BoatManager : MonoBehaviour
         
         GameObject t = Instantiate(curentsentry,_currentSqrSelected.position,Quaternion.identity,_currentSqrSelected);
     }
-    public void BuySentry(GameObject sentry)
+    public void BuySentry()
     {
         //if playermoney > cost
         //playermoney -= cost
-        GameObject t = Instantiate(sentry,_currentSqrSelected.position,Quaternion.identity,_currentSqrSelected);
+        //Debug.Log(_currentSqrSelected.childCount);
+        if (_currentSqrSelected.childCount == 0)
+        {
+            GameObject t = Instantiate(curentsentry,_currentSqrSelected.position,Quaternion.identity,_currentSqrSelected);
+        }
+        
+        
+        
         //playsound buyturet
     }
     public void UpgradeSentry()
