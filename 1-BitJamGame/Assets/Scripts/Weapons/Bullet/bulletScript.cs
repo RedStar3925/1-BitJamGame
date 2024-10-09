@@ -12,14 +12,14 @@ public class bulletScript : MonoBehaviour
     void Start()
     {
         //CoinManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
+        //rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
             //  Destroy(gameObject, lifetime);
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Bullet Collision");
+        //Debug.Log("Bullet Collision");
         if (collision.gameObject.tag == "Ennemy")
         {
           

@@ -5,14 +5,28 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
+
     public int PlayerCoin;
     public Text PlayerCoinText;
 
-
-    [ContextMenu("Increase Coin")]
-    public void AddCoin()
+    public static LogicScript instance;
+    private void Awake()
     {
-        PlayerCoin = PlayerCoin + 1;
-        PlayerCoinText.text = PlayerCoin.ToString();
+        if (instance != null)
+        { Debug.LogWarning("careful more than one instance of LogicScript"); return; }
+        instance = this;
+    }
+    [ContextMenu("Increase Coin")]
+
+
+    public void AddRemoveGold(int goldGainLose)
+    {
+        PlayerCoin += goldGainLose;
+        ActualisationUI();
+    }
+
+    public void ActualisationUI()
+    {
+        PlayerCoinText.text = "GOLD   " + PlayerCoin.ToString();
     }
 }

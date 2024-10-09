@@ -150,7 +150,9 @@ public class BasicEnemieScript : MonoBehaviour
         life -= dmg;
         if (life <= 0)
         {
+            //Debug.Log(enemyType.goldGain);
             // add a coin 
+            LogicScript.instance.AddRemoveGold(enemyType.goldGain);
             AudioManager.instance.LaunchSoundSFX(AudioManager.instance.destroySound);
             WaveScript.instance.RemoveEnemy(gameObject);
         }

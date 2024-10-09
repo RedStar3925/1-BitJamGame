@@ -22,4 +22,5 @@ MonoBehaviour:
   damage: 10
   chanceToSpawn: 10
   costPoint: 3
+  goldGain: 1
   selfDestruction: 1
