@@ -135,8 +135,13 @@ public class BasicEnemieScript : MonoBehaviour
         isAiming = false;
         if (enemyType.selfDestruction) // if the enemy is selfdestruct, we destroy it after shot
         {
+            AudioManager.instance.LaunchSoundSFX(AudioManager.instance.destroySound);
             bullet.GetComponent<SpriteRenderer>().enabled = false;
             WaveScript.instance.RemoveEnemy(gameObject);
+        }
+        else
+        {
+            AudioManager.instance.LaunchSoundSFX(AudioManager.instance.shotSound);
         }
     }
 
@@ -146,6 +151,7 @@ public class BasicEnemieScript : MonoBehaviour
         if (life <= 0)
         {
             // add a coin 
+            AudioManager.instance.LaunchSoundSFX(AudioManager.instance.destroySound);
             WaveScript.instance.RemoveEnemy(gameObject);
         }
     }

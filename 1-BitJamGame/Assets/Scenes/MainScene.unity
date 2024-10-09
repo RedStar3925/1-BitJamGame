@@ -364,8 +364,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 553492392}
-  SFX: {fileID: 474035647}
+  SFXSource: {fileID: 474035647}
   musicClip: {fileID: 8300000, guid: 2bab2c9d764a9b64b865dd4d40edd739, type: 3}
+  shotSound: {fileID: 8300000, guid: dc9ab315679cd384ba25ce5b874e7af6, type: 3}
+  destroySound: {fileID: 8300000, guid: 20705db93aa19d447adaf1f4d81fcc31, type: 3}
 --- !u!4 &181511837
 Transform:
   m_ObjectHideFlags: 0
@@ -630,7 +632,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
