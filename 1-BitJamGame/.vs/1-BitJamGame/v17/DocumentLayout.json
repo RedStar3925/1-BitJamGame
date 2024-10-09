@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\player\\boatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\boatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\player\\boatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\boatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\bullet\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,19 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BoatManager.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\BoatManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\BoatManager.cs",
               "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\BoatManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\BoatManager.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowAAAAAAAAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T00:56:49.343Z"
+              "WhenOpened": "2024-10-03T00:56:49.343Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -66,16 +67,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "bulletScript.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
               "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T17:54:56.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T17:54:56.791Z"
             },
             {
               "$type": "Document",
