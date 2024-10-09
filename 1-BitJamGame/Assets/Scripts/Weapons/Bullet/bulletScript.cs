@@ -11,7 +11,7 @@ public class bulletScript : MonoBehaviour
     
     void Start()
     {
-        CoinManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        //CoinManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
             //  Destroy(gameObject, lifetime);
 
@@ -23,7 +23,7 @@ public class bulletScript : MonoBehaviour
         if (collision.gameObject.tag == "Ennemy")
         {
           
-            CoinManager.AddCoin();
+            //CoinManager.AddCoin();
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
