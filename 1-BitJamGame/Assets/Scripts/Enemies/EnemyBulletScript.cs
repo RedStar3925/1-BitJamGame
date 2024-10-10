@@ -40,6 +40,11 @@ public class EnemyBulletScript : MonoBehaviour
         if (collision.tag == "Player")
         {
             // Damage the player
+            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.PlayerTakingDamage(damage);
+            }
 
             Destroy(this.gameObject);
         }
