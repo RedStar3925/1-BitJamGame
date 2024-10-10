@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Machine gun
   enemyBehavior: 1
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: -3960531105795557501, guid: daa1bec8a305fd048aaffdbb15f08c97, type: 3}
   health: 20
   speed: 0
   fireRange: 4

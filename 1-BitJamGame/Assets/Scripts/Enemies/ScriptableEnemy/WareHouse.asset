@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Ware House
   enemyBehavior: 1
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 4852078344353298052, guid: cb220bbbbb4382c469eba4eb6880f1e3, type: 3}
   health: 5
   speed: 0
   fireRange: 0
