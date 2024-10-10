@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
 
     public int PlayerCoin;
     public Text PlayerCoinText;
+
+    [SerializeField] GameObject _gameOverPanel;
 
     public static LogicScript instance;
     private void Awake()
@@ -28,5 +30,15 @@ public class LogicScript : MonoBehaviour
     public void ActualisationUI()
     {
         PlayerCoinText.text = "GOLD   " + PlayerCoin.ToString();
+    }
+
+    public void GameOver()
+    {
+        _gameOverPanel.SetActive(true);
+    }
+
+    public void retryButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }

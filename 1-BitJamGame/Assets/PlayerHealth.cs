@@ -25,5 +25,12 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         HealthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+
+        if (health <= 0)
+        {
+
+            LogicScript.instance.GameOver();
+            this.gameObject.SetActive(false);
+        }
     }
 }
