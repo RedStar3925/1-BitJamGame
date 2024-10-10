@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Explosive boat
   enemyBehavior: 2
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 21300000, guid: 7f3a4c6d6f3428b4b99147cc9534e66f, type: 3}
   health: 5
   speed: 2.2
   fireRange: 1.5

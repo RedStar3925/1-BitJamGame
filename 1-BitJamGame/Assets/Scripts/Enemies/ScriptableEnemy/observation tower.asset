@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Observation Tower
   enemyBehavior: 1
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 21300000, guid: 47487bf923eddc24fa53fa796c636a6b, type: 3}
   health: 5
   speed: 0
   fireRange: 10

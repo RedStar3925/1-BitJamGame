@@ -32,7 +32,6 @@ public class BasicEnemieScript : MonoBehaviour
             ShootAtPlayer();
         }
         
-        
         transform.Translate(scrollingDirection.normalized * Time.deltaTime * scrollingSpeed, Space.World);
         CleanOffScreen();
     }
@@ -148,7 +147,7 @@ public class BasicEnemieScript : MonoBehaviour
     public void EnemyTakeDamage(int dmg = 10)
     {
         life -= dmg;
-        if (life <= 0)
+        if (life == 0)
         {
             //Debug.Log(enemyType.goldGain);
             // add a coin 

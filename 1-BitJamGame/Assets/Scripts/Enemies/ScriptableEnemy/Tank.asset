@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Tank
   enemyBehavior: 0
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 21300000, guid: f38155206c5ffa647bb6efa735c9ee04, type: 3}
   health: 120
   speed: 1.4
   fireRange: 5

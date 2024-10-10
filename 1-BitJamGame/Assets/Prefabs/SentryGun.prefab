@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f801b2f7ca8510c499cb6845e8ddae2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 5
-  fireRate: 1
+  detectionRadius: 6
+  fireRate: 2
   bulletPrefab: {fileID: 595683146417901819, guid: ccec1f9e12249954e9a4be0ae41c573a, type: 3}
   firePoint: {fileID: 2559166158599713936}

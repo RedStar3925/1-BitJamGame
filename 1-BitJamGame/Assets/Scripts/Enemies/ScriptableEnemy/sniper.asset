@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Sniper
   enemyBehavior: 0
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 21300000, guid: ab967af879d44cc4dad1d2fd6565c664, type: 3}
   health: 10
   speed: 2.5
   fireRange: 6
