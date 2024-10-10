@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\ui\\uimagelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimagelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\ui\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\logicscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|d:\\dev\\unitiprojects\\1-bitjamgame\\1-bitjamgame\\assets\\scripts\\enemies\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\assets\\scripts\\enemies\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CEACD13-813E-1E8F-AC19-24D4F7DD5093}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\spawnenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,6 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UimageLogic.cs",
+              "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\UI\\UimageLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UimageLogic.cs",
+              "ToolTip": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\UI\\UimageLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UimageLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:00:51.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LogicScript.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\UI\\LogicScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LogicScript.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "spawnEnemies.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Enemies\\spawnEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\spawnEnemies.cs",
@@ -71,12 +88,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\spawnEnemies.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T04:50:18.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T04:50:18.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BoatManager.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\BoatManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\BoatManager.cs",
@@ -88,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerHealth.cs",
@@ -100,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "bulletScript.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Bullet\\bulletScript.cs",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SentryAttack.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Turrets\\SentryAttack.cs",
@@ -124,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BasicEnemieScript.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\BasicEnemieScript.cs",
@@ -136,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SentryPlacer.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Turrets\\SentryPlacer.cs",
@@ -148,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BasicPlayerMovement.cs",
               "DocumentMoniker": "D:\\dev\\UnitiProjects\\1-BitJamGame\\1-BitJamGame\\Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement\\BasicPlayerMovement.cs",
