@@ -133,10 +133,13 @@ public class BasicEnemieScript : MonoBehaviour
         bullet.GetComponent<EnemyBulletScript>().damage = enemyType.damage; // apply the enemy damage to the bullet 
         bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
         isAiming = false;
+        bullet.transform.SetParent(null);
         if (enemyType.selfDestruction) // if the enemy is selfdestruct, we destroy it after shot
         {
             AudioManager.instance.LaunchSoundSFX(AudioManager.instance.destroySound);
-            bullet.GetComponent<SpriteRenderer>().enabled = false;
+            Color invisibleBullet = bullet.GetComponent<SpriteRenderer>().color ;
+            invisibleBullet.a = 0f;
+            bullet.GetComponent<SpriteRenderer>().color = invisibleBullet;
             WaveScript.instance.RemoveEnemy(gameObject);
         }
         else
