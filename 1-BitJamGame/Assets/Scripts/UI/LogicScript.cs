@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
 
-    public int PlayerCoin;
+    public int PlayerCoin = 10;
     public Text PlayerCoinText;
 
     [SerializeField] GameObject _gameOverPanel;
@@ -15,7 +15,10 @@ public class LogicScript : MonoBehaviour
     private void Awake()
     {
         if (instance != null)
-        { Debug.LogWarning("careful more than one instance of LogicScript"); return; }
+        { 
+            Debug.LogWarning("careful more than one instance of LogicScript"); 
+            return; 
+        }
         instance = this;
     }
     [ContextMenu("Increase Coin")]

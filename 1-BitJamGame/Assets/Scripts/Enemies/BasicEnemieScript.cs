@@ -145,9 +145,10 @@ public class BasicEnemieScript : MonoBehaviour
         }
     }
 
-    public void EnemyTakeDamage(int dmg = 10)
+    public void EnemyTakeDamage(int dmg = 5)
     {
         life -= dmg;
+        Debug.Log("Enemy life: " + life);
         if (life <= 0)
         {
             //Debug.Log(enemyType.goldGain);
@@ -162,8 +163,8 @@ public class BasicEnemieScript : MonoBehaviour
     {
         if (collision.tag == "Bullet")
         {
+            Debug.Log("Bullet hit the enemy");
             EnemyTakeDamage();
-            Destroy(collision.gameObject);
         }
     }
 }

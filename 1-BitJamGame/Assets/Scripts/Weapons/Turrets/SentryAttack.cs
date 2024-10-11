@@ -19,12 +19,18 @@ public class SentryAttack : MonoBehaviour
 
         if(closestEnemy != null)
         {
-            AimAtEnemy(closestEnemy.transform);
+            float distanceToEnemy = Vector2.Distance(transform.position, closestEnemy.transform.position);
 
-            if(fireCooldown <= 0f)
+
+            if (distanceToEnemy <= detectionRadius)
             {
-                FireAtEnemy(closestEnemy.transform);
-                fireCooldown = 1f / fireRate;
+                AimAtEnemy(closestEnemy.transform);
+
+                if (fireCooldown <= 0f)
+                {
+                    FireAtEnemy(closestEnemy.transform);
+                    fireCooldown = 1f / fireRate;
+                }
             }
         }
 

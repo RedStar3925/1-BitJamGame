@@ -36,6 +36,24 @@ public class WaveScript : MonoBehaviour
 
             StartCoroutine(StartCdSpawnWave());
         }
+
+        ClearEnemyList();
+
+        if (enemiesWave.Count <= 0 && totalPoint >= wavePoint && waveIsOn)
+        {
+            EndWave();
+        }
+    }
+
+    public void ClearEnemyList()
+    {
+        for (int i = enemiesWave.Count - 1; i >= 0; i--)
+        {
+            if (enemiesWave[i] == null)
+            {
+                enemiesWave.RemoveAt(i);
+            }
+        }
     }
 
     public void SpawnWave()
@@ -64,26 +82,36 @@ public class WaveScript : MonoBehaviour
 
     public void RemoveEnemy(GameObject enemyToRemove)
     {
-        for (int i = 0; i < enemiesWave.Count; i++)
+        if (enemyToRemove == null)
         {
-            if (enemiesWave[i].transform.position == enemyToRemove.transform.position)
-            {
-                enemiesWave.Remove(enemiesWave[i]);
-                Destroy(enemyToRemove);
-            }
+            Debug.LogWarning("Enemy to remove is already null");
+            return;
         }
 
-        if (enemiesWave.Count <= 0 && totalPoint >= wavePoint)
+        if (enemiesWave.Remove(enemyToRemove))
         {
-            waveIsOn = false;
-            totalPoint = 0;
-            StartCoroutine(PeaceBeforeWave());
+            Destroy(enemyToRemove);
         }
+
+        ClearEnemyList();
+
+
+        if (enemiesWave.Count <= 0 && totalPoint >= wavePoint && waveIsOn)
+        {
+            EndWave();
+        }
+    }
+
+    private void EndWave()
+    {
+        waveIsOn = false;
+        totalPoint = 0;
+        StartCoroutine(PeaceBeforeWave());
     }
 
     IEnumerator PeaceBeforeWave()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         SpawnWave();
     }
 

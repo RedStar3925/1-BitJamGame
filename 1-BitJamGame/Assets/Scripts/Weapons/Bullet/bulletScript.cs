@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class bulletScript : MonoBehaviour
 {
-    public LogicScript CoinManager;
     public float lifetime = 3f;
     Rigidbody2D rb;
     
@@ -13,21 +12,15 @@ public class bulletScript : MonoBehaviour
     {
         //CoinManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         //rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
-            //  Destroy(gameObject, lifetime);
+        Destroy(gameObject, lifetime);
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Bullet Collision");
-        if (collision.gameObject.tag == "Ennemy")
+        if (collision.gameObject.tag == "Enemy")
         {
-          
-            //CoinManager.AddCoin();
-            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-    }
-  
-    
+    }  
 }

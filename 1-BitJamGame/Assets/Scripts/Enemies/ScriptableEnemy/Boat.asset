@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: Boat
   enemyBehavior: 2
   enemySprite: {fileID: 4063315779451632465, guid: cab8777f9b6fcc441a3ec8b4dee5a08b, type: 3}
-  health: 5
+  health: 15
   speed: 1.8
   fireRange: 3
   fireRate: 2

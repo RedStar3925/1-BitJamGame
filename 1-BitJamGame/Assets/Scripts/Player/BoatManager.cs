@@ -5,23 +5,19 @@ using UnityEngine;
 public class BoatManager : MonoBehaviour
 {
     public GameObject curentsentry; //just for testing script
-
+    public LogicScript playermoney;
     public Transform _currentSqrSelected;
+
+    public int sentryCost = 10;
 
     public void SetCurrentSqrSelected(Transform trm) => _currentSqrSelected = trm;
     public Transform GetCurrentSqrSelected() => _currentSqrSelected;
     
-    
 
-
-    public void RepairSentry()
-    {
-        //if money && hp < maxhp {tower hp = tower hp max; playermoney -= repairprice} (repair price will be set by the amount of hp restored)
-        //play sound repairturet
-    }
     public void RemoveSentry()
     {
-        //playermoney += turetcost/2
+        playermoney.AddRemoveGold(sentryCost / 2);
+
         foreach (Transform obj in _currentSqrSelected)
         {
             Destroy(obj.gameObject);
@@ -37,17 +33,29 @@ public class BoatManager : MonoBehaviour
     }
     public void BuySentry()
     {
-        //if playermoney > cost
-        //playermoney -= cost
-        //Debug.Log(_currentSqrSelected.childCount);
-        if (_currentSqrSelected.childCount == 0)
+        // Verificar se o jogador tem moedas suficientes
+        Debug.Log("Actual Coins: " + playermoney.PlayerCoin);
+        if (playermoney.PlayerCoin >= sentryCost)
         {
-            GameObject t = Instantiate(curentsentry,_currentSqrSelected.position,Quaternion.identity,_currentSqrSelected);
+            // Verificar se a posição atual não tem uma sentry
+            if (_currentSqrSelected.childCount == 0)
+            {
+                Debug.Log("Buying a sentry....");
+                // Instanciar a sentry e descontar o custo
+                GameObject t = Instantiate(curentsentry, _currentSqrSelected.position, Quaternion.identity, _currentSqrSelected);
+                playermoney.AddRemoveGold(-sentryCost); // Descontar moedas
+                sentryCost = sentryCost + sentryCost;
+
+            }
+            else
+            {
+                Debug.Log("Already exist a sentry in this local");
+            }
         }
-        
-        
-        
-        //playsound buyturet
+        else
+        {
+            Debug.Log("Insuficient coins to buy a sentry!");
+        }
     }
     public void UpgradeSentry()
     {

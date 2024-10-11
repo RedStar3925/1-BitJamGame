@@ -807,10 +807,10 @@ GameObject:
   - component: {fileID: 459899582}
   - component: {fileID: 459899583}
   - component: {fileID: 459899581}
+  - component: {fileID: 459899584}
   - component: {fileID: 459899579}
   - component: {fileID: 459899578}
   - component: {fileID: 459899577}
-  - component: {fileID: 459899584}
   m_Layer: 7
   m_Name: player
   m_TagString: Player
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955f13137cd3dae4a925488f75729c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
 --- !u!4 &459899582
 Transform:
   m_ObjectHideFlags: 0
@@ -984,7 +984,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curentsentry: {fileID: 6973726435042963006, guid: e72bda913b8aca948989620f0b735667, type: 3}
+  playermoney: {fileID: 2116316948}
   _currentSqrSelected: {fileID: 0}
+  sentryCost: 10
 --- !u!114 &459899584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,7 +1692,7 @@ Transform:
   m_GameObject: {fileID: 694222882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.26, z: 0}
+  m_LocalPosition: {x: 0, y: 5.05, z: 0}
   m_LocalScale: {x: 20, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1854,8 +1856,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -73.71002, y: -22.470001}
-  m_SizeDelta: {x: 147.42, y: 44.94}
+  m_AnchoredPosition: {x: -94.85501, y: -22.470001}
+  m_SizeDelta: {x: 189.71, y: 44.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813303618
 MonoBehaviour:
@@ -1890,7 +1892,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GOLD      0
+  m_Text: 'GOLD      10
 
 '
 --- !u!222 &813303619
@@ -2192,8 +2194,8 @@ MonoBehaviour:
   _parentOneXPositionStart: 0
   _parentTwoXPositionStart: 25
   _xPositionToReset: -25
-  _scrollingSpeed: -0.6
-  _topsideHeight: 4
+  _scrollingSpeed: -0.35
+  _topsideHeight: 3.75
   _botsideHeight: -5
 --- !u!4 &1021431556
 Transform:
@@ -3379,7 +3381,7 @@ Transform:
   m_GameObject: {fileID: 1342063365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.9, z: 0}
+  m_LocalPosition: {x: 0, y: -3.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4739,7 +4741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7b1ac10d580034b92d16da046b797d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCoin: 0
+  PlayerCoin: 10
   PlayerCoinText: {fileID: 813303618}
   _gameOverPanel: {fileID: 628242957}
 --- !u!4 &2116316949

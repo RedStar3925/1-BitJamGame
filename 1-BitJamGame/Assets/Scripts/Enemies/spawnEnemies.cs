@@ -22,7 +22,10 @@ public class spawnEnemies : MonoBehaviour
     private void Awake()
     {
         if (instance != null)
-        { Debug.LogWarning("careful more than one instance of SpawnEnemies"); return; }
+        { 
+            Debug.LogWarning("careful more than one instance of SpawnEnemies"); 
+            return; 
+        }
         instance = this;
     }
 
