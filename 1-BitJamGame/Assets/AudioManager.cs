@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSource, SFXSource;
 
-    public AudioClip musicClip, shotSound, destroySound;
+    public AudioClip musicClip, shotSound, destroySound, buildSentrySound;
     // Start is called before the first frame update
 
     public static AudioManager instance;

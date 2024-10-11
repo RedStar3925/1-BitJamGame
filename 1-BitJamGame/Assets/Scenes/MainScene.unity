@@ -349,6 +349,7 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: 2bab2c9d764a9b64b865dd4d40edd739, type: 3}
   shotSound: {fileID: 8300000, guid: dc9ab315679cd384ba25ce5b874e7af6, type: 3}
   destroySound: {fileID: 8300000, guid: 20705db93aa19d447adaf1f4d81fcc31, type: 3}
+  buildSentrySound: {fileID: 8300000, guid: e65fa983aa3fa20439c140106aa3e1a6, type: 3}
 --- !u!4 &181511837
 Transform:
   m_ObjectHideFlags: 0
@@ -1856,7 +1857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -91.77, y: -22.47}
+  m_AnchoredPosition: {x: -91.77002, y: -22.46997}
   m_SizeDelta: {x: 183.55, y: 44.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813303618

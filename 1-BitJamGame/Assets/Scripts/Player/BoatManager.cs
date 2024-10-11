@@ -32,6 +32,8 @@ public class BoatManager : MonoBehaviour
                 playermoney.AddRemoveGold(-sentryCost);
                 sentryCost = sentryCost + sentryCost;
 
+                AudioManager.instance.LaunchSoundSFX(AudioManager.instance.buildSentrySound);
+
             }
             else
             {

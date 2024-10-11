@@ -22,7 +22,7 @@ public class WaveScript : MonoBehaviour
 
     private void Start()
     {
-        SpawnWave();
+        StartCoroutine(PeaceBeforeWave());
     }
 
     private void Update()
@@ -111,7 +111,7 @@ public class WaveScript : MonoBehaviour
 
     IEnumerator PeaceBeforeWave()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         SpawnWave();
     }
 
