@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Enemies\BasicEnemieScript.cs" />
     <Compile Include="Assets\RaycastDebugger.cs" />
     <Compile Include="Assets\Scripts\Player\BoatManager.cs" />
+    <Compile Include="Assets\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UimageLogic.cs" />
     <Compile Include="Assets\Scripts\UI\LogicScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\bulletScript.cs" />

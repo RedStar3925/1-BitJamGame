@@ -42,6 +42,11 @@ public class LogicScript : MonoBehaviour
 
     public void retryButton()
     {
+        SceneManager.LoadScene(1);
+    }
+
+    public void MainMenuButton()
+    {
         SceneManager.LoadScene(0);
     }
 }
