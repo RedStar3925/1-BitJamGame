@@ -49,7 +49,7 @@ public class spawnEnemies : MonoBehaviour
 
 
                     // add a random range for the enemy spawn 
-                    float transY = Random.Range(-0.5f, 0.5f);
+                    float transY = Random.Range(-0.3f, 0.3f);
 
                     enemy.transform.position = transSpawnStatic[a].position;
                     // Debug.Log(transY);
@@ -65,7 +65,7 @@ public class spawnEnemies : MonoBehaviour
                     //Debug.Log(transSpawnGround[a]);
 
                     // add a random range for the enemy spawn 
-                    float transX = Random.Range(-5f, 5f);
+                    float transX = Random.Range(-3f, 3f);
 
                     enemy.transform.position = transSpawnGround[a].position;
                     // Debug.Log(transY);
@@ -148,19 +148,19 @@ public class spawnEnemies : MonoBehaviour
     private void PlaceAllSpawn()
     {
         Camera camera = Camera.main;
-        Vector2 midleTop = camera.ViewportToWorldPoint(new Vector2(0.5f, 1.2f));
+        Vector2 midleTop = camera.ViewportToWorldPoint(new Vector2(0.5f, 2f));
         transSpawnGround[0].position = midleTop;
 
-        Vector2 midleBot = camera.ViewportToWorldPoint(new Vector2(0.5f, -0.2f));
+        Vector2 midleBot = camera.ViewportToWorldPoint(new Vector2(0.5f, 0.0f));
         transSpawnGround[1].position = midleBot;
 
-        Vector2 RightTop = camera.ViewportToWorldPoint(new Vector2(1.2f, 0.9f));
+        Vector2 RightTop = camera.ViewportToWorldPoint(new Vector2(1.0f, 0.9f));
         transSpawnStatic[0].position = RightTop;
 
-        Vector2 RightBot = camera.ViewportToWorldPoint(new Vector2(1.2f, 0.1f));
+        Vector2 RightBot = camera.ViewportToWorldPoint(new Vector2(1.0f, 0.1f)); 
         transSpawnStatic[1].position = RightBot;
 
-        Vector2 RightMidle = camera.ViewportToWorldPoint(new Vector2(1.2f, 0.5f));
+        Vector2 RightMidle = camera.ViewportToWorldPoint(new Vector2(1.0f, 0.5f)); 
         transSpawnWater[0].position = RightMidle;
     }
 
